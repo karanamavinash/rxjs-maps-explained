@@ -52,10 +52,10 @@ export class AppComponent {
       // .subscribe((x) => console.log(x),error=>console.error(error),()=>console.log('completed'))
   }
   stopObservables() {
-    console.log('stopped');
-    this.subscriptions.unsubscribe();
-    this._unsubscribe$.next(undefined);
-    this._unsubscribe$.complete();
+      console.log('stopped');
+      this.subscriptions.unsubscribe();
+      this._unsubscribe$.next(undefined);
+      this._unsubscribe$.complete();
   }
 }
 
